@@ -36,3 +36,6 @@ C:\Users\Fatih\source\repos\practices\BookStore\WebaPI\bin\Debug\net6.0\Microsof
 C:\Users\Fatih\source\repos\practices\BookStore\WebaPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Fatih\source\repos\practices\BookStore\WebaPI\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\Users\Fatih\source\repos\practices\BookStore\WebaPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Fatih\source\repos\practices\BookStore\WebaPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Fatih\source\repos\practices\BookStore\WebaPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Fatih\source\repos\practices\BookStore\WebaPI\bin\Debug\net6.0\FluentValidation.dll

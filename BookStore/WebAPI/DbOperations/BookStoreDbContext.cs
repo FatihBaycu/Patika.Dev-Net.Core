@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using WebAPI.Entities;
 
 namespace WebAPI.DbOperations;
 public class BookStoreDbContext:DbContext{
