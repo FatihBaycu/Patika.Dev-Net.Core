@@ -27,8 +27,8 @@ public class GetBooksQuery
                 Genre = ((GenreEnum)book.GenreId).ToString(),
                 PageSize = book.PageSize,
                 Price = book.Price,
-                PublishDate = book.PublishDate.Date.ToString("dd//mm/yyyy/")
-           }); ;
+                PublishDate = book.PublishDate.Date.ToString("dd/M/yyyy")
+           });
         }
         return booksViewModel;
 

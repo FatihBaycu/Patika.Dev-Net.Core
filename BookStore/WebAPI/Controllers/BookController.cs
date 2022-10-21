@@ -47,12 +47,13 @@ public class BookController : ControllerBase
     }
 
 
-    //[HttpGet("{id}")]
-    //public Book GetById(int id)
-    //{
-    //    var result = _bookRepository.GetById(id);
-    //    return result;
-    //}
+    [HttpGet("get-by-id-with-model")]
+    public IActionResult GetByIdWithModel(int id)
+    {
+        GetBookByIdQuery query=new GetBookByIdQuery(_context);
+        var result = query.Handle(id);
+        return Ok(result);
+    }
     
 
     [HttpGet]
@@ -82,6 +83,19 @@ public class BookController : ControllerBase
 
     }
 
+    [HttpPut("update-book-with-model")]
+    public IActionResult UpdateBookWithModel([FromBody] UpdateBookModel UpdateBookModel)
+    {
+        UpdateBookCommand updateBookCommand=new UpdateBookCommand(_context);
+        updateBookCommand.updateBookModel = UpdateBookModel;
+        updateBookCommand.Handle();
+        return Ok();
+
+
+    }
+
+
+
     [HttpDelete("delete-book")]
     public IActionResult DeleteBook(int id)
     {
@@ -89,7 +103,6 @@ public class BookController : ControllerBase
         
         return Ok();
     }
-    
     [HttpPut("update-book")]
     public IActionResult UpdateBook([FromBody] Book book)
     {
@@ -97,5 +110,7 @@ public class BookController : ControllerBase
         
         return Ok();
     }
+
+    
 
 }
